@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Launch Dev Server (npm run dev)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Debug in Chrome (http://localhost:8081)",
+      "url": "http://localhost:8081",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "devtools": true
+    }
+  ]
+}

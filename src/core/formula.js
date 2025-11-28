@@ -55,6 +55,11 @@ const baseFormulas = [
     title: tf('formula.concat'),
     render: ary => ary.join(''),
   },
+  {
+    key: 'ROUNDUP',
+    title: tf('formula.roundup'),
+    render: ary => Number(ary[0]).toFixed(Number(ary[1])),
+  },
   /* support:  1 + A1 + B2 * 3
   {
     key: 'DIVIDE',
